@@ -1,13 +1,28 @@
-# Sample Hardhat Project
+# Staking-Upgradable Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-Try running some of the following tasks:
+1. Install Libraries
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npm i
+```
+
+
+2. Deploy Contracts
+
+```shell
+npx hardhat compile #compile contract
+
+npx hardhat node #run local node
+
+#open new terminal
+
+npx hardhat run --network localhost scripts/deploy.js #deploy contracts
+```
+
+3. Upgrade using Proxy
+
+```shell
+npx hardhat run --network localhost scripts/upgrade.js
+
 ```
